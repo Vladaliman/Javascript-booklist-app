@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Booklist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center display-4"><i class="fas fa-book text-secondary"></i> My <span class="text-secondary">Book</span>List</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label class="text-primary" for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="text-primary" for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="text-primary" for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <input type="submit" value="Add book" class="btn btn-primary btn-block ">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th class="text-primary">Title</th>
+                    <th class="text-primary">Author</th>
+                    <th class="text-primary">ISBN#</th>
+                    <th class="text-primary"></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
